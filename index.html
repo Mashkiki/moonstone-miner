@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/start.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+    <script src="js/stats.js"></script>
+    <script src="js/fun.js"></script>
+    <script src="js/main.js"></script>
+    <script defer src="js/items.js"></script>
+</head>
+
+<body onload="load()">
+    <div id="game">
+        <div class="inline" id="score">
+            <div class="inline" id="score-text">You have </div>
+            <div class="inline" id="score-value">0</div>
+            <div></div>
+            <div class="inline" id="sps-text">You are gaining </div>
+            <div class="inline" id="sps-value">0</div>
+            <div class="inline" id="sps-text"> per second</div>
+        </div>
+        <hr>
+        <div class="inline" id="droppersEnabled">
+            <div class="inline" id="droppers-enabled-text">Droppers:</div>
+            <div class="inline textred" id="droppers-enabled"> Disabled</div>
+        </div>
+        <button class="inline colorred" id="enable-droppers" onclick="toggleDroppers()">Enable droppers</button>
+    </div>
+
+    <hr>
+
+    <div class="store">
+
+        <div class="store-heading">Upgraders:</div>
+        <div class="category" id="storeUpgraders"></div>
+
+
+
+    </div>
+    <div id="inventory"></div>
+</body>
+
+</html>
